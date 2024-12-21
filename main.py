@@ -14,7 +14,7 @@ st.title("Sistem Rekomendasi Produk")
 
 # Load Data
 df = pd.read_csv("data_produk.csv")
-#st.dataframe(df)  # Tampilkan data awal
+st.dataframe(df)  # Tampilkan data awal
 
 # Filter data dengan deskripsi yang tidak null
 df = df[df['description'].notnull()]
